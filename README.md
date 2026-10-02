@@ -28,9 +28,9 @@ cross-tenant reference is impossible to even represent (A3).
 2. Create your login (or sign in) when asked, then complete checkout with the
    payment provider.
 3. On Set Up Your Workspace, enter the Organization Name, then choose how the
-   workspace pays for AI: Start on the platform trial key included with my
-   purchase, or Use my own API key (choose the AI Vendor, Select Model, enter
-   the LLM API Key, and Verify Key).
+   workspace pays for AI: Start with a free Vendor API key included with my
+   purchase, or Use my own (BYOK) API key (choose the AI Vendor, Select Model,
+   enter the LLM API Key, and Verify Key).
 4. Select Create Workspace. You are the owner, and you land on the dashboard
    (the Command Center).
 
@@ -82,9 +82,8 @@ silently mishandled.
 **What it is.** The core act. The tenant triggers the research-and-generate
 pipeline: feeds and web search are gathered, corroborated into a verified
 brief, and an LLM drafts a business social post from a vaulted prompt. The run
-uses the workspace's own AI key, or the platform trial key when the workspace
-was purchased without one. Only models the platform operator has enabled can
-run; any other is refused before a call is made.
+uses the workspace's own AI key (BYOK). The platform does supply a funded API
+key with a new tenant Trial Subscription.
 
 **Guarantee behind it.** A post is never generated from thin sources (D1).
 Numbers in the post are never invented; only figures present in the research are
@@ -302,7 +301,7 @@ card (F5), and no secret ever appears in the spend ledger (B5).
    provider's customer portal, linked from Billing.
 3. In User Management, under AI Language Provider, choose the Provider and
    Model, enter your API Key, and select Verify Key, so generation runs on your
-   own account. A workspace purchased on the platform trial key runs on that
+   own account. A workspace purchased on the vendor API key runs on that
    key until you add your own.
 4. Capabilities unlock according to the plan.
 5. Watch AI spend in User Management, under Spend: Recent Activity lists each
